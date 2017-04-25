@@ -4,12 +4,12 @@
 if status --is-login
 
  # For Japanese
- set -gx LANG ja_JP.UTF-8
- set -gx LESSCHARSET utf-8
- set -gx JLESSCHARSET japanese-utf-8
+ set -x LANG ja_JP.UTF-8
+ set -x LESSCHARSET utf-8
+ set -x JLESSCHARSET japanese-utf-8
 
  # For Python 2.7
- set -gx HGENCODING UTF-8
+ set -x HGENCODING UTF-8
 end
 
 # cdした後に自動でls
