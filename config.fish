@@ -21,9 +21,3 @@ end
 set -x PATH /usr/local/bin $PATH
 set -x PATH /usr/local/opt/openssl/bin $PATH
 set -x PATH /usr/local/opt/opencv3/bin $PATH
-
-### Virtualenvwrapper
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]
-   set WORKON_HOME $HOME/.virtualenvs
-   source /usr/local/bin/virtualenvwrapper.sh
-end
