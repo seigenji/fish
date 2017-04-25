@@ -28,3 +28,13 @@ if status --is-login
     end
   end
 end
+
+### Virtualenvwrapper
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]
+   set WORKON_HOME $HOME/.virtualenvs
+   bass source /usr/local/bin/virtualenvwrapper.sh
+end
+
+# sublimetext3を現在のディレクトリをプロジェクトとして開く
+# commandは sb . とかで今のディレクトリをプロジェクトとして開く
+alias sb="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
