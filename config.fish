@@ -9,21 +9,22 @@ if status --is-login
 
   # For Python 2.7
   set -x HGENCODING UTF-8
-end
 
-# cdした後に自動でls
-function cd
-  builtin cd $argv
-  ls
-end
-
-set -x PATH /usr/local/bin $PATH
-set -x PATH /usr/local/opt/openssl/bin $PATH
-set -x PATH /usr/local/opt/opencv3/bin $PATH
-
-# Press enter to ls
-function done_enter --on-event fish_postexec
-  if test -z "$argv"
+  # cdした後に自動でls
+  function cd
+    builtin cd $argv
     ls
   end
+
+  set -x PATH /usr/local/bin $PATH
+  set -x PATH /usr/local/opt/openssl/bin $PATH
+  set -x PATH /usr/local/opt/opencv3/bin $PATH
+
+  # Press enter to ls
+  function done_enter --on-event fish_postexec
+    if test -z "$argv"
+      ls
+    end
+  end
 end
+
