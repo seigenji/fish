@@ -32,3 +32,6 @@ end
 # sublimetext3を現在のディレクトリをプロジェクトとして開く
 # commandは sb . とかで今のディレクトリをプロジェクトとして開く
 alias sb="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
+## rmでゴミ箱に入れる
+alias rm='rmtrash'
