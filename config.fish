@@ -19,6 +19,7 @@ if status --is-login
   set -x PATH /usr/local/bin $PATH
   set -x PATH /usr/local/opt/openssl/bin $PATH
   set -x PATH /usr/local/opt/opencv3/bin $PATH
+  set -g fish_user_paths "/usr/local/opt/opencv3/bin" $fish_user_paths
 
   # Press enter to ls
   function done_enter --on-event fish_postexec
@@ -27,4 +28,3 @@ if status --is-login
     end
   end
 end
-
