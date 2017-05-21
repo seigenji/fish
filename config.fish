@@ -31,3 +31,6 @@ alias sb="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 ## rmでゴミ箱に入れる
 alias rm='rmtrash'
+
+# Jupyter notebookの環境変数
+export BROWSER=/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
